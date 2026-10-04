@@ -1,0 +1,26 @@
+
+:root { color-scheme: light; --ink:#1c1915; --muted:#5e584e; --paper:#f3efe6; --card:#fffdf8; --line:#e2d9c9; --green:#0c6b52; --green-ink:#f4fff9; --danger:#8d1d1d; --warn:#8a5a00; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: "Iowan Old Style", Palatino, Georgia, serif; color:var(--ink); background:var(--paper); }
+header { display:flex; flex-wrap:wrap; gap:12px 20px; align-items:center; justify-content:space-between; padding:14px 16px; background:#17241f; color:#f6f3ec; }
+header a { color:#f6f3ec; text-decoration:none; }
+.brand { font-weight:700; letter-spacing:.02em; }
+nav, .who { display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; }
+main { max-width:880px; margin:0 auto; padding:20px 16px 48px; }
+h1,h2 { font-weight:650; letter-spacing:-.02em; }
+.hero { margin-bottom:20px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:.75rem; color:var(--muted); margin:0; font-family: "Avenir Next", "Segoe UI", sans-serif; }
+.money { font-size:clamp(2rem, 8vw, 3.4rem); margin:.1em 0; }
+.secondary { color:var(--muted); margin:.2em 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; }
+.narrow { max-width:420px; }
+label { display:block; margin:10px 0 4px; font-family:"Avenir Next","Segoe UI",sans-serif; font-size:.92rem; }
+input, select, button { font:inherit; }
+input, select { width:100%; padding:10px 12px; border-radius:10px; border:1px solid #c9bfb0; background:#fff; color:var(--ink); }
+button { margin-top:12px; background:var(--green); color:var(--green-ink); border:0; border-radius:999px; padding:10px 16px; cursor:pointer; }
+button:focus, input:focus, select:focus, a:focus { outline:3px solid #e0a100; outline-offset:2px; }
+.error { color:var(--danger); }
+.uncertain { color:var(--warn); }
+article { border-top:1px solid var(--line); padding:10px 0; }
+@media (max-width: 420px) { header { align-items:flex-start; } .money { overflow-wrap:anywhere; } }
